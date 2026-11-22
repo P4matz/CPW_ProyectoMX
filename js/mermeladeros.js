@@ -4,7 +4,7 @@ const datosMermeladeros = {
             <img src="img/mermeladeros.jpg" alt="Escudo Mermeladeros FC" class="mrm-logo-escudo" onerror="this.src='img/ligamx.png'">
             <div class="mrm-identidad-texto">
                 <h3>El Origen del Escudo de Mermeladeros FC</h3>
-                <p>El emblema de <strong>Mermeladeros FC</strong> fusiona la tradición artesanal mexicana con el humor caracteristico del grupo que lo conforma, el logo utiliza los colores morados tipicos de la mermelada de zarzampora con el dorado y negro para generar contraste./p>
+                <p>El emblema de <strong>Mermeladeros FC</strong> fusiona la tradición artesanal mexicana con el humor caracteristico del grupo que lo conforma, el logo utiliza los colores morados tipicos de la mermelada de zarzampora con el dorado y negro para generar contraste.</p>
                 <p>En el escudo podemos ver dos estrellas que representan los titulos de cachorros fc, club que funciona como cantera del actual equipo y de donde muchos jugadores del primer equipo tuvieron esos dos titulos de liga, es una manera de honrar al club que dio a conocer a varios de nuestros jugadores.</p>
             </div>
         </div>

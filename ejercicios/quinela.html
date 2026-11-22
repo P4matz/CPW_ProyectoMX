@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiniela - Liga MX</title>
+    <link rel="stylesheet" href="../css/estilos_quinela.css">
+</head>
+<body>
+
+    <div class="browser-frame">
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="../img/ligamx.png" alt="Logo Liga MX" class="logo-img">
+                <h1 class="site-title">Liga MX</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../Ventana_de_sesion.html">Iniciar Sesión</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../liga-mx/liga-mx/index2.html">Posiciones</a></li>
+                    <li><a href="../libertadores.html">Libertadores</a></li>
+                    <li><a href="quinela.html" class="active">Quiniela</a></li>
+                    <li><a href="../simulador_oficial.html">Simulador</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="quinela-container">
+            <h2>🏆 Quiniela Interactiva</h2>
+            <p class="intro">Arma los 9 partidos de la jornada, elige el resultado de cada uno y guarda. Al guardar, la jornada se bloquea y sus puntos se acumulan en la tabla; después pasas a la siguiente jornada. </p>
+
+            
+            <div class="semana-selector">
+                <button id="btn-prev" class="btn-semana">◀ Jornada anterior</button>
+                <h3 id="num-jornada">Jornada 1 de 17</h3>
+                <button id="btn-next" class="btn-semana">Jornada siguiente ▶</button>
+            </div>
+
+            <div class="layout">
+                
+                <aside class="panel panel-equipos">
+                    <h3>Equipos</h3>
+                    <ul id="lista-equipos" class="lista-equipos"></ul>
+                </aside>
+
+               
+                <section class="panel panel-partidos">
+                    <h3 id="titulo-partidos">Jornada 1: 9 partidos</h3>
+                    <p id="nota-partidos" class="nota">Arrastra un equipo a cada espacio. Arrastra de un espacio a otro para intercambiarlos, o usa la ✕ para quitarlo.</p>
+                    <div id="partidos" class="partidos"></div>
+                </section>
+            </div>
+
+            
+            <section class="panel seccion-tabla">
+                <h3>Tabla de clasificación acumulada</h3>
+                <div class="tabla-scroll-container">
+                    <table class="stats-table">
+                        <thead>
+                            <tr>
+                                <th>Pos</th><th>Club</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-usuario"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <div class="acciones">
+                <button id="btn-limpiar" class="btn-limpiar">Limpiar jornada</button>
+                <button id="btn-guardar" class="btn-guardar">Guardar tu quinela</button>
+            </div>
+            <p id="msg-guardado" class="msg-guardado"></p>
+
+          
+            <div class="semana-selector semana-pie">
+                <button id="btn-prev-pie" class="btn-semana">◀ Jornada anterior</button>
+                <h3 id="num-jornada-pie">Jornada 1 de 17</h3>
+                <button id="btn-next-pie" class="btn-semana">Jornada siguiente ▶</button>
+            </div>
+            <p class="reinicio"><button id="btn-reiniciar" class="btn-reiniciar">Reiniciar todas las jornadas</button></p>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Liga BBVA. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="../js/quinela.js"></script>
+</body>
+</html>
